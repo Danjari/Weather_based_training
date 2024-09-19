@@ -6,9 +6,6 @@ import streamlit as st
 import requests
 st.set_page_config(page_title="Weather-Based Workout Planner", page_icon="💪", layout="centered")
 
-headers ={
-    "authorization": st.secrets["WEATHER_API_KEY_VAL"]
-}
 # OpenWeatherMap API configuration
 WEATHER_API_KEY = st.secrets["WEATHER_API_KEY"]  #find a way to hide? DONE
 WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather'
